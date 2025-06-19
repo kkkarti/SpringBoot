@@ -2,19 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <title>Форма пользователя</title>
+    <title>Список пользователей</title>
 </head>
 <body>
-<h1>Добавить/Редактировать пользователя</h1>
-<form action="users/save" method="post">
-    <input type="hidden" name="id" value="" />
-    <p>
-        <label>Имя:<br/>
-            <input type="text" name="name" />
-        </label>
-    </p>
-    <button type="submit">Сохранить</button>
-</form>
-<a href="users">Назад к списку</a>
+<h1>Пользователи</h1>
+<a href="users/add">Добавить пользователя</a>
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+        <th>Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
 </body>
-</html>
